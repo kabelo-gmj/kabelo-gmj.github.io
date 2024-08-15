@@ -2,17 +2,6 @@
 <html>
 <head>
 
-     <style>
-    .custom-fc-frame {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .custom-fc-expanded {
-      border-radius: 10px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    }
-  </style>
-
      <script>
     function initFreshChat() {
       window.fcWidget.init({
@@ -49,7 +38,7 @@
           type: "text",
           //Label for Field Title, can be in any language
           label: "First Name",
-          //Field ID for Title
+          //Field ID for First Name
           fieldId: "First_Name",
           //Required "yes" or "no"
           required: "yes",
@@ -57,7 +46,7 @@
           error: "Please Enter a valid Title"
         },
         field2: {
-          //Type for Name - Do not Change
+          //Type for Last Name - Do not Change
           type: "text",
           //Label for Field Name, can be in any language
           label: "Last Name",
@@ -81,16 +70,16 @@
           error: "Please Enter a valid Email"
         },
         field4: {
-          //Type for Phone - Do Not Change
+          //Type for Subject - Do Not Change
           type: "text",
-          //Label for Field Phone, can be in any language
+          //Label for Field Subject, can be in any language
           label: "Subject",
-          //Default - Field ID for Phone - Do Not Change
+          //Default - Field ID for Subject - Do Not Change
           fieldId: "Subject",
           //Required "yes" or "no"
           required: "yes",
           //Error text to be displayed
-          error: "Please Enter a valid Phone Number"
+          error: "This is not a subject"
         },
       }
     };
@@ -100,9 +89,9 @@
       config: {
         cssNames: {
           //The below element is mandatory. Please add any custom class or leave the default.
-          widget: 'custom_fc_frame',
+          //widget: 'custom_fc_frame',
           //The below element is mandatory. Please add any custom class or leave the default.
-          expanded: 'custom_fc_expanded'
+          //expanded: 'custom_fc_expanded'
         }
       },
       onInit: function () {

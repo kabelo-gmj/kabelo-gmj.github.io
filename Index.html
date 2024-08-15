@@ -2,6 +2,11 @@
 <html>
 <head>
 
+    
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
      <script>
     function initFreshChat() {
       window.fcWidget.init({
@@ -19,16 +24,17 @@
     window.addEventListener ? window.addEventListener("load", initiateCall, !1) :
       window.attachEvent("load", initiateCall, !1);
   </script>
-   <script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
+  <script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
   <script>
-      
     var preChatTemplate = {
       //Form header color and Submit button color.
       mainbgColor: '#0aa4db',
       //Form Header Text and Submit button text color.
       maintxColor: '#fff',
       //Chat Form Title
-      heading: 'Chat',
+      heading: 'GadgetGod',
+      //Chat form Welcome Message
+      textBanner: 'We can\'t wait to talk to you. But first, please take a couple of moments to tell us a bit about yourself.',
       //Submit Button Label.
       SubmitLabel: 'Start Chat',
       //Fields List - Maximum is 5
@@ -36,23 +42,23 @@
       fields: {
         field1: {
           //Type can be either text or title
-          type: "text",
+          type: "title",
           //Label for Field Title, can be in any language
-          label: "First Name",
-          //Field ID for First Name
-          fieldId: "First_Name",
+          label: "Title",
+          //Field ID for Title
+          fieldId: "title",
           //Required "yes" or "no"
           required: "yes",
           //Error text to be displayed
           error: "Please Enter a valid Title"
         },
         field2: {
-          //Type for Last Name - Do not Change
-          type: "text",
+          //Type for Name - Do not Change
+          type: "name",
           //Label for Field Name, can be in any language
-          label: "Last Name",
+          label: "Name",
           //Default - Field ID for Name - Do Not Change
-          fieldId: "Last_Name",
+          fieldId: "name",
           //Required "yes" or "no"
           required: "yes",
           //Error text to be displayed
@@ -62,7 +68,7 @@
           //Type for Email - Do Not Change
           type: "email",
           //Label for Field Email, can be in any language
-          label: "Primary Email",
+          label: "Email",
           //Default - Field ID for Email - Do Not Change
           fieldId: "email",
           //Required "yes" or "no"
@@ -71,17 +77,31 @@
           error: "Please Enter a valid Email"
         },
         field4: {
-          //Type for Subject - Do Not Change
-          type: "text",
-          //Label for Field Subject, can be in any language
-          label: "Subject",
-          //Default - Field ID for Subject - Do Not Change
-          fieldId: "Subject",
+          //Type for Phone - Do Not Change
+          type: "phone",
+          //Label for Field Phone, can be in any language
+          label: "Phone",
+          //Default - Field ID for Phone - Do Not Change
+          fieldId: "phone",
           //Required "yes" or "no"
           required: "yes",
           //Error text to be displayed
-          error: "This is not a subject"
+          error: "Please Enter a valid Phone Number"
         },
+        field5: {
+          //Type for Dropdown
+          type: "dropdown",
+          //Label for Field Dropdown, can be in any language
+          label: "Plan",
+          //Field ID for Plan Dropdown
+          fieldId: "plan",
+          //Required "yes" or "no"
+          required: "yes",
+          //Error text to be displayed
+          error: "Please select an option",
+          //Options for the Dropdown field
+          options: ['Sprout', 'Blossom', 'Garden', 'Estate', 'Forest']
+        }
       }
     };
     window.fcSettings = {
@@ -101,9 +121,9 @@
       }
     };
   </script>
-  
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="https://freshtechafrica16.freshchat.com/js/widget.js" async></script>
+     
     <script src='//uae.fw-cdn.com/40097196/48182.js' chat='true' widgetId='69bd0a20-04d0-4393-8f67-21ef1c679ae9'> </script>
     <link rel="stylesheet" href="StyleSheet1.css" />
     <link rel="icon" href="images/favicon.ico" />

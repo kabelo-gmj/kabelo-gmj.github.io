@@ -77,7 +77,7 @@ div.chat-fc-form-outer {
     outline: none;
   }
   .chat-fc-form-outer div.fc-form ul li label {
-    position: absolute;
+    <!--position: absolute;-->
     top: -19px;
     font-weight: lighter;
     margin-left: 8px;

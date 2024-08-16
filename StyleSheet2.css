@@ -29,7 +29,7 @@ div.chat-fc-form-outer {
   .chat-fc-form-outer p.fc-header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: black;
+    background-color: #black;
     display: block;
     padding: 12px 15px;
     font-size: 14px;

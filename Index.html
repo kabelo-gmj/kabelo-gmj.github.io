@@ -7,7 +7,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
+<style>
+    .custom_fc_frame {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .custom_fc_expanded {
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <script>
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "156eabaa-e5a7-4940-87d4-14c22776a48e",
+        host: "https://freshtechafrica16.freshchat.com",
+        widgetUuid: "71ca4705-7fa6-4ea8-826f-5f1a0c559c04"
+      });
+    }
+    function initialize(i, t) {
+      var e; i.getElementById(t) ?
+        initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0,
+          e.src = "https://freshtechafrica16.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
+    }
+    function initiateCall() { initialize(document, "Freshchat-js-sdk") }
+    window.addEventListener ? window.addEventListener("load", initiateCall, !1) :
+      window.attachEvent("load", initiateCall, !1);
+  </script>
+  <script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
+  <script>
+    var preChatTemplate = {
+      mainbgColor: '#4CAF50', // Updated to a modern green color
+      maintxColor: '#FFFFFF', // Updated to white for better contrast
+      heading: 'Welcome to GadgetGod Support', // Updated heading
+      textBanner: 'We are excited to assist you! Please provide some details to get started.', // Updated text
+      SubmitLabel: 'Start Chat',
+      fields: {
+        field1: {
+          type: "title",
+          label: "Title",
+          fieldId: "title",
+          required: "yes",
+          error: "Please Enter a valid Title"
+        },
+        field2: {
+          type: "name",
+          label: "Name",
+          fieldId: "name",
+          required: "yes",
+          error: "Please Enter a valid name"
+        },
+        field3: {
+          type: "email",
+          label: "Email",
+          fieldId: "email",
+          required: "yes",
+          error: "Please Enter a valid Email"
+        },
+        field4: {
+          type: "phone",
+          label: "Phone",
+          fieldId: "phone",
+          required: "yes",
+          error: "Please Enter a valid Phone Number"
+        },
+        field5: {
+          type: "dropdown",
+          label: "Plan",
+          fieldId: "plan",
+          required: "yes",
+          error: "Please select an option",
+          options: ['Sprout', 'Blossom', 'Garden', 'Estate', 'Forest']
+        }
+      }
+    };
+    window.fcSettings = {
+      token: "156eabaa-e5a7-4940-87d4-14c22776a48e",
+      host: "https://freshtechafrica16.freshchat.com",
+      config: {
+        cssNames: {
+          widget: 'custom_fc_frame',
+          expanded: 'custom_fc_expanded'
+        }
+      },
+      onInit: function () {
+        console.log('widget init');
+        fcPreChatform.fcWidgetInit(preChatTemplate);
+      }
+    };
+  </script>
+
 
 
 

@@ -43,7 +43,7 @@ div.chat-fc-form-outer {
     cursor: pointer;
   }
   .chat-fc-form-outer div.fc-form {
-   /* margin: 2px;*/
+   margin: 2px;
    background-color: white;
    color: #333;
    padding: 0 20px 20px;

@@ -8,57 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-     <script>
-    function initFreshChat() {
-      window.fcWidget.init({
-        token: "156eabaa-e5a7-4940-87d4-14c22776a48e",
-        host: "https://freshtechafrica16.freshchat.com",
-        widgetUuid: "71ca4705-7fa6-4ea8-826f-5f1a0c559c04"
-      });
-    }
-    function initialize(i, t) {
-      var e; i.getElementById(t) ?
-        initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0,
-          e.src = "https://freshtechafrica16.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
-    }
-    function initiateCall() { initialize(document, "Freshchat-js-sdk") }
-    window.addEventListener ? window.addEventListener("load", initiateCall, !1) :
-      window.attachEvent("load", initiateCall, !1);
-  </script>
     
-  <script src="JavaScript2.js"></script>
-  <script>
-    var preChatTemplate = {
-      //Form header color and Submit button color.
-      //mainbgColor: 'black',
-      //Form Header Text and Submit button text color.
-      maintxColor: '#fff',
-      //Chat Form Title
-      heading: 'Chat',
-      //Chat form Welcome Message
-      //Submit Button Label.
-      SubmitLabel: 'Start Chat',
-      //Fields List - Maximum is 5
-      //All the values are mandatory and the script will not work if not available.
-      
-    window.fcSettings = {
-      token: "156eabaa-e5a7-4940-87d4-14c22776a48e",
-      host: "https://freshtechafrica16.freshchat.com",
-      config: {
-        cssNames: {
-          //The below element is mandatory. Please add any custom class or leave the default.
-          widget: 'custom_fc_frame',
-          //The below element is mandatory. Please add any custom class or leave the default.
-          expanded: 'custom_fc_expanded'
-        }
-      },
-      onInit: function () {
-        console.log('widget init');
-        fcPreChatform.fcWidgetInit(preChatTemplate);
-      }
-    };
-  </script>
-
      
     <script src='//uae.fw-cdn.com/40097196/48182.js' chat='true' widgetId='69bd0a20-04d0-4393-8f67-21ef1c679ae9'> </script>
     <link rel="stylesheet" href="StyleSheet1.css" />

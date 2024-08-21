@@ -6,6 +6,27 @@
   
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script>
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "156eabaa-e5a7-4940-87d4-14c22776a48e",
+        host: "https://freshtechafrica16.freshchat.com",
+        widgetUuid: "71ca4705-7fa6-4ea8-826f-5f1a0c559c04"
+      });
+    }
+    function initialize(i, t) {
+      var e; i.getElementById(t) ?
+        initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0,
+          e.src = "https://freshtechafrica16.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
+    }
+    function initiateCall() { initialize(document, "Freshchat-js-sdk") }
+    window.addEventListener ? window.addEventListener("load", initiateCall, !1) :
+      window.attachEvent("load", initiateCall, !1);
+  </script>
+
+
+    
     <link rel="stylesheet" href="StyleSheet1.css" />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />

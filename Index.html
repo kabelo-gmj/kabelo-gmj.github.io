@@ -24,8 +24,7 @@
     window.addEventListener ? window.addEventListener("load", initiateCall, !1) :
       window.attachEvent("load", initiateCall, !1);
   </script>
-  //<script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
-<link rel="html" href="form.html" />
+  <script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
 
 
 
@@ -121,7 +120,7 @@
       },
       onInit: function () {
         console.log('widget init');
-        form.fcWidgetInit(form);
+        fcPreChatform.fcWidgetInit(preChatTemplate);
       }
     };
   </script>

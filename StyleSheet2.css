@@ -43,9 +43,9 @@ div.chat-fc-form-outer {
     cursor: pointer;
   }
   .chat-fc-form-outer div.fc-form {
-  list-style: none;
-    position: relative;
-    margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   }
   .chat-fc-form-outer div.fc-form p {
     line-height: 1.2;

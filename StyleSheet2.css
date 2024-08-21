@@ -43,11 +43,9 @@ div.chat-fc-form-outer {
     cursor: pointer;
   }
   .chat-fc-form-outer div.fc-form {
-   margin: 2px;
-   background-color: white;
-   color: #333;
-   padding: 0 20px 20px;
-   overflow: auto;
+  list-style: none;
+    position: relative;
+    margin-bottom: 20px;
   }
   .chat-fc-form-outer div.fc-form p {
     line-height: 1.2;
@@ -55,7 +53,7 @@ div.chat-fc-form-outer {
     font-weight: lighter;
   }
   .chat-fc-form-outer div.fc-form ul {
-    display: flex;
+  display: flex;
   flex-flow: row wrap;
   align-items: center;
   }

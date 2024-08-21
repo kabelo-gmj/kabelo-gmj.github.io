@@ -55,8 +55,9 @@ div.chat-fc-form-outer {
     font-weight: lighter;
   }
   .chat-fc-form-outer div.fc-form ul {
-    margin: 0;
-    padding: 0;
+    display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   }
   .chat-fc-form-outer div.fc-form ul li {
     list-style: none;
